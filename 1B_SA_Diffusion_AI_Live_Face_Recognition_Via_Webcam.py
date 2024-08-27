@@ -1,0 +1,60 @@
+# Packages need to download
+# pip install opencv-python face-recognition numpy
+# pip install --upgrade face_recognition dlib opencv-python
+
+import cv2
+import face_recognition
+import numpy as np
+
+# Load the known face
+known_face_img = face_recognition.load_image_file("D:/Machine_Learning_DiffuseAi/ANAND2.jpg")
+known_face_encoding = face_recognition.face_encodings(known_face_img)[0]
+
+# Create arrays of known face encodings and their corresponding names
+known_face_encodings = [known_face_encoding]
+known_face_names = ["Anand"]
+
+# Initialize the video capture device
+cap = cv2.VideoCapture(0)
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        print("Failed to grab frame")
+        break
+
+    # Convert the frame to RGB using cvtColor
+    rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+    # Detect faces in the frame
+    face_locations = face_recognition.face_locations(rgb_frame)
+    face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
+
+    # Loop through each face in the frame
+    for face_encoding, face_location in zip(face_encodings, face_locations):
+        # Compare the face encoding with the known face encodings
+        matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
+        name = "Unknown"
+
+        # Check if a match is found
+        if True in matches:
+            first_match_index = matches.index(True)
+            name = known_face_names[first_match_index]
+
+        # Draw a rectangle around the face and display the name
+        top, right, bottom, left = face_location
+        cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
+        cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 255, 0), cv2.FILLED)
+        font = cv2.FONT_HERSHEY_DUPLEX
+        cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+
+    # Display the output
+    cv2.imshow("Video", frame)
+
+    # Exit on pressing 'q'
+    if cv2.waitKey(1) & 0xFF == ord("q"):
+        break
+
+# Release the video capture device and close all windows
+cap.release()
+cv2.destroyAllWindows()
