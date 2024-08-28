@@ -30,7 +30,6 @@ This project focuses on recognizing faces from an uploaded video file. The video
 To run this project, you'll need:
 - **Google Colab**: The project is designed to run in Google Colab for ease of use and to leverage the computational resources available on the platform.
 - **Python 3.6+**: Ensure that your Colab environment is running Python 3.6 or higher.
-- **Required Libraries**: All necessary libraries are specified in the `requirements.txt` file, which you can install directly in Colab.
 
 ### Installation Repo1A
 
@@ -45,23 +44,30 @@ To run this project, you'll need:
    - Open `face_recognition_video.py` in Google Colab.
 
 3. **Install the dependencies:**
-   - Run the following command in a Colab cell:
+   - Run the following commands in a Colab cell:
    ```python
-   !pip install -r REPO1A.ANAND.Face_Recognition_From_Upload_Video/requirements.txt
+   !pip install numpy opencv-python dlib face_recognition imutils
    ```
 
 ### Usage Repo1A
 
-To run the face recognition on an uploaded video:
+To run the face recognition on an uploaded video in Google Colab:
 
-1. Upload your video file to Google Drive.
-2. Modify the `video_path` in `face_recognition_video.py` to point to your video file.
-3. Run the script in Google Colab:
-   ```python
-   !python REPO1A.ANAND.Face_Recognition_From_Upload_Video/face_recognition_video.py --video_path /content/drive/MyDrive/your_video.mp4
-   ```
+1. **Upload your video file**:
+   - First, upload the video file to your Google Drive.
 
-This will process the video and output the recognized faces with labels.
+2. **Modify the script**:
+   - Open `face_recognition_video.py` in Google Colab.
+   - Modify the `video_path` variable in the script to point to the location of your uploaded video in Google Drive. For example:
+     ```python
+     video_path = '/content/drive/MyDrive/your_video.mp4'
+     ```
+
+3. **Run the script**:
+   - Execute the entire script in Google Colab. The code will automatically process the video file and output the recognized faces.
+
+4. **Output**:
+   - The processed video will be saved to your Google Drive, along with logs of the recognized faces.
 
 ### Results Repo1A
 
@@ -80,7 +86,6 @@ This project implements real-time face recognition using a webcam. It continuous
 To run this project, you'll need:
 - **Anaconda Navigator**: The project is designed to run in an Anaconda environment to easily manage dependencies.
 - **Python 3.6+**: Ensure that your Anaconda environment is running Python 3.6 or higher.
-- **Required Libraries**: All necessary libraries are specified in the `requirements.txt` file.
 
 ### Installation Repo1B
 
@@ -103,7 +108,7 @@ To run this project, you'll need:
 
 4. **Install the dependencies:**
    ```bash
-   pip install -r requirements.txt
+   pip install numpy opencv-python dlib face_recognition imutils
    ```
 
 ### Usage Repo1B
@@ -188,10 +193,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any inquiries, suggestions, or further information about the Face Recognition Projects, feel free to reach out to me.
 
 ### About the Face Recognition Project
+
 These projects were developed as part of my Machine Learning Internship at Diffuse AI. They focus on implementing and optimizing face recognition algorithms for different input sources, such as pre-recorded videos and live webcam feeds. The goal is to accurately identify and track faces using advanced machine learning models, providing real-time or post-processed recognition capabilities.
 
 If you are interested in collaborating on similar projects or have questions about the implementation details, I'm always open to discussing new ideas and opportunities.
 
 **Anand Sundaramoorthy**  
-**Email:** [sanand03072005@gmail.com](mailto:sanand03072005@gmail.com)  
+**Email:** [sanand03072005@gmail.com](mailto:sanand03072005@gmail.com?subject=Inquiry%20About%20Face%20Recognition%20Project&body=Hi%20Anand,%0A%0AI'm%20interested%20in%20learning%20more%20about%20the%20Face%20Recognition%20Projects%20you%20developed%20during%20your%20Machine%20Learning%20Internship%20at%20Diffuse%20AI.%20I%20have%20some%20questions%20and%20would%20like%20to%20discuss%20potential%20collaborations.%0A%0AThank%20you!%0A%0ABest%20regards,%0A[Your%20Name])
+
 **LinkedIn:** [Anand Sundaramoorthy](https://www.linkedin.com/in/anands37/)
