@@ -5,11 +5,13 @@ Welcome to the Face Recognition Projects, part of my Machine Learning Internship
 ## Table of Contents
 - [Repo1A: Face Recognition from Uploaded Video](#repo1a-face-recognition-from-uploaded-video)
   - [About](#about-repo1a)
+  - [Requirements](#requirements-repo1a)
   - [Installation](#installation-repo1a)
   - [Usage](#usage-repo1a)
   - [Results](#results-repo1a)
 - [Repo1B: Live Face Recognition via Webcam](#repo1b-live-face-recognition-via-webcam)
   - [About](#about-repo1b)
+  - [Requirements](#requirements-repo1b)
   - [Installation](#installation-repo1b)
   - [Usage](#usage-repo1b)
   - [Results](#results-repo1b)
@@ -23,6 +25,13 @@ Welcome to the Face Recognition Projects, part of my Machine Learning Internship
 
 This project focuses on recognizing faces from an uploaded video file. The video is processed frame by frame to detect and identify faces using pre-trained models. The main objective is to extract faces from each frame and match them against a database of known faces.
 
+### Requirements Repo1A
+
+To run this project, you'll need:
+- **Google Colab**: The project is designed to run in Google Colab for ease of use and to leverage the computational resources available on the platform.
+- **Python 3.6+**: Ensure that your Colab environment is running Python 3.6 or higher.
+- **Required Libraries**: All necessary libraries are specified in the `requirements.txt` file, which you can install directly in Colab.
+
 ### Installation Repo1A
 
 1. **Clone the repository:**
@@ -31,37 +40,32 @@ This project focuses on recognizing faces from an uploaded video file. The video
    cd Machine-Learning-Intern-DiffuseAi
    ```
 
-2. **Navigate to the Repo1A directory:**
-   ```bash
-   cd REPO1A.ANAND.Face_Recognition_From_Upload_Video
-   ```
+2. **Open the project in Google Colab:**
+   - Upload the `REPO1A.ANAND.Face_Recognition_From_Upload_Video` folder to your Google Drive.
+   - Open `face_recognition_video.py` in Google Colab.
 
-3. **Create a virtual environment and activate it:**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-4. **Install the dependencies:**
-   ```bash
-   pip install -r requirements.txt
+3. **Install the dependencies:**
+   - Run the following command in a Colab cell:
+   ```python
+   !pip install -r REPO1A.ANAND.Face_Recognition_From_Upload_Video/requirements.txt
    ```
 
 ### Usage Repo1A
 
 To run the face recognition on an uploaded video:
 
-1. Place the video file in the `input/` directory.
-2. Run the following command:
-   ```bash
-   python face_recognition_video.py --video_path input/your_video.mp4
+1. Upload your video file to Google Drive.
+2. Modify the `video_path` in `face_recognition_video.py` to point to your video file.
+3. Run the script in Google Colab:
+   ```python
+   !python REPO1A.ANAND.Face_Recognition_From_Upload_Video/face_recognition_video.py --video_path /content/drive/MyDrive/your_video.mp4
    ```
 
-This will process the video and output the recognized faces with labels in the `output/` directory.
+This will process the video and output the recognized faces with labels.
 
 ### Results Repo1A
 
-The processed video with recognized faces is saved in the `output/` directory. Additionally, a log file is generated, detailing the number of faces detected, their locations in each frame, and the identities matched.
+The processed video with recognized faces is saved in the specified output directory in Google Drive. Additionally, a log file is generated, detailing the number of faces detected, their locations in each frame, and the identities matched.
 
 ---
 
@@ -71,6 +75,13 @@ The processed video with recognized faces is saved in the `output/` directory. A
 
 This project implements real-time face recognition using a webcam. It continuously captures frames from the webcam, detects faces, and matches them against a pre-trained model's database of known faces. This project is ideal for applications requiring instant face recognition, such as security systems.
 
+### Requirements Repo1B
+
+To run this project, you'll need:
+- **Anaconda Navigator**: The project is designed to run in an Anaconda environment to easily manage dependencies.
+- **Python 3.6+**: Ensure that your Anaconda environment is running Python 3.6 or higher.
+- **Required Libraries**: All necessary libraries are specified in the `requirements.txt` file.
+
 ### Installation Repo1B
 
 1. **Clone the repository:**
@@ -79,15 +90,15 @@ This project implements real-time face recognition using a webcam. It continuous
    cd Machine-Learning-Intern-DiffuseAi
    ```
 
-2. **Navigate to the Repo1B directory:**
+2. **Create and activate a new Anaconda environment:**
    ```bash
-   cd REPO1B.ANAND.Live_Face_Recognition_Via_Webcam
+   conda create -n face_recognition_env python=3.6
+   conda activate face_recognition_env
    ```
 
-3. **Create a virtual environment and activate it:**
+3. **Navigate to the Repo1B directory:**
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   cd REPO1B.ANAND.Live_Face_Recognition_Via_Webcam
    ```
 
 4. **Install the dependencies:**
@@ -100,12 +111,12 @@ This project implements real-time face recognition using a webcam. It continuous
 To start live face recognition via your webcam:
 
 1. Ensure your webcam is connected and properly configured.
-2. Run the following command:
+2. Run the following command in Anaconda Prompt or terminal:
    ```bash
    python live_face_recognition.py
    ```
 
-The script will launch a window showing the webcam feed with detected faces labeled with their identities in real-time.
+The script will launch a window showing the webcam feed with detected faces labeled in real-time.
 
 ### Results Repo1B
 
@@ -158,6 +169,12 @@ We welcome contributions to improve the Face Recognition Projects! If you have a
    - Your pull request will be reviewed by the project maintainers. Please be responsive to any feedback or requests for changes.
    - Once your pull request is approved, it will be merged into the main branch.
 
+### Guidelines
+
+- **Code Style:** Ensure your code adheres to the project’s coding style and conventions.
+- **Documentation:** Include appropriate comments and documentation for your changes, especially if introducing new features or modifying existing ones.
+- **Testing:** Write unit tests for any new functionality, and ensure that all existing tests pass before submitting your pull request.
+
 Thank you for your interest in contributing! Your efforts help make this project better for everyone.
 
 ---
@@ -178,4 +195,3 @@ If you are interested in collaborating on similar projects or have questions abo
 **Anand Sundaramoorthy**  
 **Email:** [sanand03072005@gmail.com](mailto:sanand03072005@gmail.com)  
 **LinkedIn:** [Anand Sundaramoorthy](https://www.linkedin.com/in/anands37/)
-
