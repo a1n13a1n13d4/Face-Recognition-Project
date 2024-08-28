@@ -158,12 +158,6 @@ We welcome contributions to improve the Face Recognition Projects! If you have a
    - Your pull request will be reviewed by the project maintainers. Please be responsive to any feedback or requests for changes.
    - Once your pull request is approved, it will be merged into the main branch.
 
-### Guidelines
-
-- **Code Style:** Ensure your code adheres to the project’s coding style and conventions.
-- **Documentation:** Include appropriate comments and documentation for your changes, especially if introducing new features or modifying existing ones.
-- **Testing:** Write unit tests for any new functionality, and ensure that all existing tests pass before submitting your pull request.
-
 Thank you for your interest in contributing! Your efforts help make this project better for everyone.
 
 ---
