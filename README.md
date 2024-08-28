@@ -66,9 +66,6 @@ To run the face recognition on an uploaded video in Google Colab:
 3. **Run the script**:
    - Execute the entire script in Google Colab. The code will automatically process the video file and output the recognized faces.
 
-4. **Output**:
-   - The processed video will be saved to your Google Drive, along with logs of the recognized faces.
-
 ### Results Repo1A
 
 The processed video with recognized faces is saved in the specified output directory in Google Drive. Additionally, a log file is generated, detailing the number of faces detected, their locations in each frame, and the identities matched.
