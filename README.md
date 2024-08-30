@@ -1,6 +1,6 @@
 # Face Recognition Projects
 
-Welcome to the Face Recognition Projects, part of my Machine Learning Internship at Diffuse AI. This repository contains two distinct projects focused on face recognition, each tailored for different input sources—video uploads and live webcam feeds.
+Welcome to the Face Recognition Projects. This repository contains two distinct face recognition projects, each tailored for different input sources—video uploads and live webcam feeds.
 
 ## Table of Contents
 - [Repo1A: Face Recognition from Uploaded Video](#repo1a-face-recognition-from-uploaded-video)
