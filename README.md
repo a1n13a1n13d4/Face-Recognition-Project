@@ -135,7 +135,7 @@ We welcome contributions to improve these face recognition projects. Please foll
 - **Documentation:** Include appropriate comments and documentation for your changes, especially if introducing new features or modifying existing ones.
 - **Testing:** Write unit tests for any new functionality, and ensure that all existing tests pass before submitting your pull request.
 
-Thank you for your interest in contributing! Your efforts help make this project better for everyone.
+Thank you for your interest in contributing! 
 ---
 
 ## License
@@ -147,9 +147,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For inquiries or suggestions, feel free to reach out:
 
 **Anand Sundaramoorthy**  
-**Email:** [sanand03072005@gmail.com](mailto:sanand03072005@gmail.com?subject=Inquiry%20About%20Face%20Recognition%20Project&body=Hi%20Anand,%0A%0AI'm%20interested%20in%20learning%20more%20about%20the%20Face%20Recognition%20Projects%20you%20developed%20during%20your%20Machine%20Learning%20Internship%20at%20Diffuse%20AI.%20I%20have%20some%20questions%20and%20would%20like%20to%20discuss%20potential%20collaborations.%0A%0AThank%20you!%0A%0ABest%20regards,%0A[Your%20Name])
+**Email:** [sanand03072005@gmail.com](mailto:sanand03072005@gmail.com?subject=Inquiry%20About%20Face%20Recognition%20Project&body=Hi%20Anand,%0A%0AI'm%20interested%20in%20learning%20more%20about%20the%20Face%20Recognition%20Projects%20you%20developed.%20I%20have%20some%20questions%20and%20would%20like%20to%20discuss%20potential%20collaborations.%0A%0AThank%20you!%0A%0ABest%20regards,%0A[Your%20Name])
 
 **LinkedIn:** [Anand Sundaramoorthy](https://www.linkedin.com/in/anands37/)
+
 
 
 
