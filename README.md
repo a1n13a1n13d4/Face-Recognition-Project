@@ -19,19 +19,19 @@ Welcome to the Face Recognition Projects. This repository contains two distinct 
 - [License](#license)
 - [Contact](#contact)
 
-## Repo1A: Face Recognition from Uploaded Video
+## Face Recognition from Uploaded Video
 
-### About Repo1A
+### About 
 
 This project focuses on recognizing faces from an uploaded video file. The video is processed frame by frame to detect and identify faces using pre-trained models. The main objective is to extract faces from each frame and match them against a database of known faces.
 
-### Requirements Repo1A
+### Requirements 
 
 To run this project, you'll need:
 - **Google Colab**: The project is designed to run in Google Colab for ease of use and to leverage the computational resources available on the platform.
 - **Python 3.6+**: Ensure that your Colab environment is running Python 3.6 or higher.
 
-### Installation Repo1A
+### Installation 
 
 1. **Clone the repository:**
    ```bash
@@ -40,8 +40,8 @@ To run this project, you'll need:
    ```
 
 2. **Open the project in Google Colab:**
-   - Upload the `REPO1A.ANAND.Face_Recognition_From_Upload_Video` folder to your Google Drive.
-   - Open `face_recognition_video.py` in Google Colab.
+   - Upload the `Face-Recognition-Project` folder to your Google Drive.
+   - Open `Face_Recognition_From_Upload_Video` in Google Colab.
 
 3. **Install the dependencies:**
    - Run the following commands in a Colab cell:
