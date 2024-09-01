@@ -36,7 +36,7 @@ To run this project, you'll need:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/a1n13a1n13d4/Machine-Learning-Intern-DiffuseAi.git
-   cd Machine-Learning-Intern-DiffuseAi
+   cd Face-Recognition-Project
    ```
 
 2. **Open the project in Google Colab:**
@@ -89,7 +89,7 @@ To run this project, you'll need:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/a1n13a1n13d4/Machine-Learning-Intern-DiffuseAi.git
-   cd Machine-Learning-Intern-DiffuseAi
+   cd Face-Recognition-Project
    ```
 
 2. **Create and activate a new Anaconda environment:**
