@@ -1,4 +1,4 @@
-# Face Recognition Projects
+# Machine Learning Python Codes
 
 Welcome to the Face Recognition Projects repository. This repository contains two distinct face recognition implementations: one for processing video uploads and another for live webcam feeds.
 
