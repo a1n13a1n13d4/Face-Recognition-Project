@@ -1,6 +1,6 @@
 # Machine Learning Python Codes
 
-Welcome to the Face Recognition Projects repository. This repository contains two distinct face recognition implementations: one for processing video uploads and another for live webcam feeds.
+Welcome to the Machine Learning Python Codes. This repository contains varieties of Machine Learning dependent Python Codes.
 
 ## Table of Contents
 - [Face Recognition from Uploaded Video](#face-recognition-from-uploaded-video)
@@ -15,6 +15,19 @@ Welcome to the Face Recognition Projects repository. This repository contains tw
   - [Installation](#installation-1)
   - [Usage](#usage-1)
   - [Results](#results-1)
+- [Sign Language Digit Recognition via Webcam](#sign-language-digit-recognition-via-webcam)
+  - [About](#about-2)
+  - [Requirements](#requirements-2)
+  - [Installation](#installation-2)
+  - [Usage](#usage-2)
+  - [Results](#results-2)
+  - [Troubleshooting](#troubleshooting)
+- [Head Movement Detection Project](#head-movement-detection-project)
+  - [About](#about-3)
+  - [Requirements](#requirements-3)
+  - [Installation](#installation-3)
+  - [Usage](#usage-3)
+  - [Results](#results-3)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
