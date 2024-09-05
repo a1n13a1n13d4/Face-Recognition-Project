@@ -50,8 +50,8 @@ You'll need:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/a1n13a1n13d4/Face-Recognition-Project.git
-   cd Face-Recognition-Project
+   git clone https://github.com/a1n13a1n13d4/Machine-Learning-Python-Codes.git
+   cd Machine-Learning-Python-Codes
    ```
 
 2. **Open in Google Colab:**
@@ -93,8 +93,8 @@ You'll need:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/a1n13a1n13d4/Face-Recognition-Project.git
-   cd Face-Recognition-Project
+   git clone https://github.com/a1n13a1n13d4/Machine-Learning-Python-Codes.git
+   cd Machine-Learning-Python-Codes
    ```
 
 2. **Create and activate a new Anaconda environment:**
@@ -129,26 +129,26 @@ The results are displayed live and logged to a file for future reference.
 
 ---
 
-# Sign Language Digit Recognition via Webcam
+## Sign Language Digit Recognition via Webcam
 
-## About
+### About
 
 This project provides real-time sign language digit recognition via a webcam. It generates a random 5-digit number and prompts the user to sign each digit sequentially. The system verifies if the signed digits match the generated number and provides feedback on the accuracy.
 
-## Requirements
+### Requirements
 
 You'll need:
 
 - A Python 3.9.13
 - A virtual environment manager (recommended: `venv`).
 
-## Installation
+### Installation
 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/Sign-Language-Digit-Recognition.git
-   cd Sign-Language-Digit-Recognition
+   git clone https://github.com/a1n13a1n13d4/Machine-Learning-Python-Codes.git
+   cd Machine-Learning-Python-Codes
    ```
 
 2. **Create and Activate a Virtual Environment**
@@ -175,7 +175,7 @@ You'll need:
    pip install mediapipe==0.9.1 opencv-python==4.7.0.72 numpy==1.21.4
    ```
 
-## Usage
+### Usage
 
 1. **Ensure Your Webcam is Properly Set Up**
 
@@ -198,12 +198,12 @@ You'll need:
 
    - To stop the program at any time, press the 'q' key while the video window is open.
 
-## Results
+### Results
 
 - **Real-Time Feedback**: The system provides live feedback on whether the signed digits match the generated number.
 - **Logging**: Results are displayed on the terminal and can be customized to log to a file if needed.
 
-## Troubleshooting
+### Troubleshooting
 
 - **No Video Feed**:
   - Ensure your webcam is properly connected and accessible.
@@ -216,24 +216,28 @@ You'll need:
   - Update the `detect_gesture()` function with more accurate gesture recognition logic using MediaPipe landmarks.
 
 ---
-# Head Movement Detection Project
 
-## About
+## Head Movement Detection Project
+
+### About
+
 This project uses a real-time video feed to detect and analyze head movements. It prompts users to move their heads in specific directions (up, down, left, right) and evaluates if the movements match the given prompt. The system uses pre-trained dlib models to detect faces and landmarks, and provides visual feedback based on detected movements.
 
-## Requirements
+### Requirements
+
 You'll need:
 
 - Python 3.9+ as your environment.
 - OpenCV, dlib, numpy, and imutils libraries.
 - A pre-trained dlib model for face landmarks (`shape_predictor_68_face_landmarks.dat`).
 
-## Installation
+### Installation
+
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/a1n13a1n13d4/REPO2.ANAND.Live_Det_Spof/
-    cd REPO2.ANAND.Live_Det_Spof
+    git clone https://github.com/a1n13a1n13d4/Machine-Learning-Python-Codes.git
+    cd Machine-Learning-Python-Codes
     ```
 
 2. **Create and activate a virtual environment:**
@@ -253,7 +257,8 @@ You'll need:
 
     Download the `shape_predictor_68_face_landmarks.dat` file from the [dlib model repository](https://github.com/davisking/dlib-models). Extract the file and place it in the project directory.
 
-## Usage
+### Usage
+
 1. **Run the script:**
 
     Ensure your webcam is connected and working. Execute the script to start head movement detection:
@@ -266,7 +271,8 @@ You'll need:
 
     The script will display prompts to move your head in different directions. Follow the instructions and see if your movements match the given prompt. The video feed will show visual feedback with green or red boxes based on your movements.
 
-## Results
+### Results
+
 The processed video feed will be displayed in a window. No output files are saved; instead, the feedback is shown in real-time.
 
 ---
