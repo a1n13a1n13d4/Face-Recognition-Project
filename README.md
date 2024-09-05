@@ -128,6 +128,93 @@ We welcome contributions to improve these face recognition projects. Please foll
 4. **Submit a pull request** with a detailed description.
 
 ---
+# Sign Language Digit Recognition via Webcam
+
+## About
+
+This project provides real-time sign language digit recognition via a webcam. It generates a random 5-digit number and prompts the user to sign each digit sequentially. The system verifies if the signed digits match the generated number and provides feedback on the accuracy.
+
+## Requirements
+
+You'll need:
+
+- A Python 3.9.13
+- A virtual environment manager (recommended: `venv`).
+
+## Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/Sign-Language-Digit-Recognition.git
+   cd Sign-Language-Digit-Recognition
+   ```
+
+2. **Create and Activate a Virtual Environment**
+
+   ```bash
+   python -m venv envir
+   ```
+
+   - On Windows:
+
+     ```bash
+     envir\Scripts\activate
+     ```
+
+   - On macOS/Linux:
+
+     ```bash
+     source envir/bin/activate
+     ```
+
+3. **Install Dependencies**
+
+   ```bash
+   pip install mediapipe==0.9.1 opencv-python==4.7.0.72 numpy==1.21.4
+   ```
+
+## Usage
+
+1. **Ensure Your Webcam is Properly Set Up**
+
+   Make sure your webcam is connected and operational.
+
+2. **Run the Script**
+
+   ```bash
+   python Sign_Detection.py
+   ```
+
+3. **How It Works**
+
+   - The script generates a random 5-digit number consisting of digits 1-5.
+   - For each digit, the script displays the digit to be signed and waits for the user to sign it.
+   - The system uses MediaPipe to detect and recognize hand gestures.
+   - The detected gestures are checked against the expected digits, and feedback is provided.
+
+4. **Stopping the Program**
+
+   - To stop the program at any time, press the 'q' key while the video window is open.
+
+## Results
+
+- **Real-Time Feedback**: The system provides live feedback on whether the signed digits match the generated number.
+- **Logging**: Results are displayed on the terminal and can be customized to log to a file if needed.
+
+## Troubleshooting
+
+- **No Video Feed**:
+  - Ensure your webcam is properly connected and accessible.
+  - Check if other applications are using the webcam.
+
+- **Import Errors**:
+  - Verify that all required packages are installed in the virtual environment.
+
+- **Gesture Recognition Not Accurate**:
+  - Update the `detect_gesture()` function with more accurate gesture recognition logic using MediaPipe landmarks.
+
+---
 
 ### Guidelines
 
