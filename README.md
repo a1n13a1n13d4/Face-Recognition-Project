@@ -203,6 +203,60 @@ You'll need:
   - Update the `detect_gesture()` function with more accurate gesture recognition logic using MediaPipe landmarks.
 
 ---
+# Head Movement Detection Project
+
+## About
+This project uses a real-time video feed to detect and analyze head movements. It prompts users to move their heads in specific directions (up, down, left, right) and evaluates if the movements match the given prompt. The system uses pre-trained dlib models to detect faces and landmarks, and provides visual feedback based on detected movements.
+
+## Requirements
+You'll need:
+
+- Python 3.9+ as your environment.
+- OpenCV, dlib, numpy, and imutils libraries.
+- A pre-trained dlib model for face landmarks (`shape_predictor_68_face_landmarks.dat`).
+
+## Installation
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/a1n13a1n13d4/REPO2.ANAND.Live_Det_Spof/
+    cd REPO2.ANAND.Live_Det_Spof
+    ```
+
+2. **Create and activate a virtual environment:**
+
+    ```bash
+    python -m venv envir
+    source envir/bin/activate  # On Windows use `envir\Scripts\activate`
+    ```
+
+3. **Install the required packages:**
+
+    ```bash
+    pip install opencv-python==4.5.5.64 dlib==19.22.1 imutils==0.5.4 face_recognition==1.3.0 numpy
+    ```
+
+4. **Download the dlib shape predictor model:**
+
+    Download the `shape_predictor_68_face_landmarks.dat` file from the [dlib model repository](https://github.com/davisking/dlib-models). Extract the file and place it in the project directory.
+
+## Usage
+1. **Run the script:**
+
+    Ensure your webcam is connected and working. Execute the script to start head movement detection:
+
+    ```bash
+    python Head_Movement.py
+    ```
+
+2. **Interact with the prompts:**
+
+    The script will display prompts to move your head in different directions. Follow the instructions and see if your movements match the given prompt. The video feed will show visual feedback with green or red boxes based on your movements.
+
+## Results
+The processed video feed will be displayed in a window. No output files are saved; instead, the feedback is shown in real-time.
+
+---
 
 ### Guidelines
 
